@@ -1,0 +1,68 @@
+// console.log("HEllo World");
+var myFriends = ["mamma", "lavi dii"];
+// console.log(myFriends[1]);
+// console.log(sum()); 
+
+// function sum() {
+//   let a = 5; b = 6;
+//   let sum = a+b;
+//  return `the sum of the two number is ${sum}`;
+// }
+
+// How to convert in into Fat Arrow Function 
+
+// const sum = () => `the sum of the two number is ${(a=5)+(b=6)}`;
+
+// console.log(sum()); 
+//Do-While Loop Statement
+
+// var num = 20;
+// do{
+//   debugger;
+//   console.log(num); //infinte loop
+//   num++;
+// }while(num <= 10);
+//forloop
+// for (var i=0; i<myFriends.length;i++){
+//     console.log(myFriends[i]);
+// }
+// for in loop
+// for (let elements in myFriends){
+//     console.log(elements);
+// }//rerurn index
+
+// //for of loop
+// for(let elements of myFriends){
+//     console.log(elements);
+// }
+
+//for each--can't use break
+// myFriends.forEach(function(element, index, array){
+//     console.log(element + " index: "+index+ " "+ array);
+// })
+
+//searching
+//push....return length of array
+
+// const animals =['pig','goat'];
+// const count =animals.push("cow");
+// console.log(animals);
+// console.log(count);
+
+// const myNumber =[1,2,4,7];
+// myNumbers.unshift(4,6);
+
+// console.log(myNumbers);
+
+//pop()
+//.removes last Element
+// const plant =['potato','tomato'];
+// console.log(plant);
+// console.log(plant.pop());
+// console.log(plant);
+
+//splice method
+
+const months = ['jan', 'march', 'feb', 'july'];
+const newMonth=months.splice(months.length,1,'Dec');
+console.log(months);//0 is depicting deleate nhi krna
