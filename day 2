@@ -60,9 +60,3 @@ var myFriends = ["mamma", "lavi dii"];
 // console.log(plant);
 // console.log(plant.pop());
 // console.log(plant);
-
-//splice method
-
-const months = ['jan', 'march', 'feb', 'july'];
-const newMonth=months.splice(months.length,1,'Dec');
-console.log(months);//0 is depicting deleate nhi krna
