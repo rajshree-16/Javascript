@@ -1,0 +1,119 @@
+//hoisting-only for variable and function declaration
+// sum(5,10);
+
+// function sum(a,b){
+//     add=a+b;
+//     console.log(add);
+// }
+
+// sum(5,10);
+// sum(5,10);
+//hoasting doesn't work on function expression
+//type error
+// console.log(sum);
+// var sum = function (a,b){
+//     add=a+b;
+//     console.log(add);
+// }
+// console.log(sum);
+// sum(5,10);
+// sum(10,10);
+// const sum = (a,b) => {
+//     add=a+b;
+//     console.log(add);
+// }
+
+//variable hoasting
+// 1.
+// var a;
+// console.log(a);......undefined
+
+//  2.
+// console.log(a);
+// var a=10;...undefined
+
+// console.log("I am a" + job);//undefined
+// var job ="Web developer";
+// console.log("Iam a "+ job);//web developer
+
+// function whoAmI(){
+//     console.log("I am a"+job);//undefined
+//     var job = "Full Stack";
+//     console.log("I am a"+ job)//full stack
+// }
+// whoAmI();
+
+//strict mode
+
+// "use strict"
+// function sum(a,b){
+//    var add=a+b;//if var is not added then ...add is not defined will appear in output screen
+//     console.log(add);
+// }
+
+// sum(5,10);
+
+//this keyword
+// function sum()
+//  {
+//     var add= 2+2
+//     console.log("sum of two no. is "+ add);
+//     console.log(this);
+//  }
+//  sum();//sum of two no is 4
+       //window
+
+    //    const thapa={
+    //     name : "Rajshree",
+    //     qualif : "btech",
+    //     sum: function()
+    //     {var add = 2+2;
+    //      console.log("Sum of two no. is "+ add)
+    //      console.log(this);
+    //      console.log(this.name);
+    //     }
+    //    }//strict use krke "undefined " aa jaayega
+    //    thapa.sum();
+
+// types
+// let e=null;
+// console.log(e);
+
+//array is an object
+
+// const array= [1,2,3];
+// console.log(array);
+
+// const arrayobj = {
+//     0:1,
+//     1:2,
+//     2:3
+// }
+// console.log(arrayobj);
+// console.log(typeof(array));
+// console.log(typeof(arrayobj));
+// console.log(Array.isArray(array));
+// console.log(Array.isArray(arrayobj));
+
+//copy elements of an array to another
+
+// const arr1=[1,2,3,4];
+// const arr2=[].concat(arr1);
+// arr2.push(5);
+// console.log(arr2);
+// console.log(arr1);
+
+// let like = 100;
+// const youtube={
+//     name: "Thapa tech",
+//     subscribers : 98000
+// }
+// const thapa =(a,b) => {
+//     a=200;
+//     b.subscribers =100000;
+// }
+// thapa(like,youtube);
+
+// console.log(like);
+// console.log(youtube.subscribers);
+
