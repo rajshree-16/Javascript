@@ -1,0 +1,171 @@
+// const perOne =(friend,callfrnd) => {
+//     console.log(`I am busy ${
+//     friend}.I will cal you back.`);
+//     callfrnd();
+// }
+
+// const perTwo =() => {
+//     console.log(`Hey what's up`)
+// }
+
+// perOne("Rajshree",perTwo);
+
+// const x = function (a, b) {
+//     return a * b
+// };
+// let z = x(4, 3);
+// console.log(z);
+
+// function myFunction(a, b) {
+//     return arguments.length;
+//   }
+//   let x=myFunction(3,5);
+
+//   function myFunction(a, b) {
+//     return a * b;
+//   }
+  
+//   let text = myFunction.toString();
+
+//   instead of writing...
+//   var x = function(x,y){
+//     return x*y;
+//   }
+
+//   we can do
+//   const x=(x,y) => x*y;
+
+//   function myFunction(a, b) {
+//     return a * b;
+//   }
+  
+//   let text = myFunction.toString();
+
+// const interviewQue =(name) =>{
+//     if(name == "Rajshree"){
+//         return function(topic){
+//             console.log(`hii ${name}. What is ${topic}?. Plz explain us. `);
+//         }
+//     }
+// }
+// const cand1 = interviewQue("Rajshree");
+// cand1("UI");
+// cand1("UX");
+
+ //IIFE --use only when u have to keep data private
+//  Immediate invoked function expression
+
+// (function (aName) {
+//     console.log('Author name is '+aName);
+// })("Thapatech");
+
+//closure in js
+//combination of function and lexical environment
+
+// const outerFun =(a) => {
+//     let b =10;
+//     const innerFun =() =>  {
+//         let sum =a+b;
+//         console.log(`the sum of two no. is ${sum}.`);
+//     }
+//     innerFun();
+// }
+// outerFun(5);
+
+//call method
+// const y1={
+//     name:"raj",
+//     content: "program",
+//     feature: function(rating){
+//         console.log(`very friendly way of teaching. ${this.name} is my fav ${this.content} channel. I will give ${rating} star.`);
+//     } 
+// }
+// const y2 ={
+//     name: "shree",
+//     content : "prog"
+// }
+// y1.feature.call(y2,5);
+
+// The call() method takes arguments separately.
+
+
+// The apply() method takes arguments as an array.
+// apply() Method
+
+// const person ={
+//     fullName : function(){
+//       return this.firstName +" "+this.lastName ;
+//     }
+// }
+// const person1 ={
+//     firstName: "Raj",
+//     lastName: "Shree"
+// }
+// person.fullName.apply(person1);
+
+
+
+// const getSum = function () {
+//     return 10;
+// }
+
+// console.log(getSum.call());
+// console.log(getSum.apply());
+
+//bind()
+
+// const person = {
+//     firstName:"John",
+//     lastName: "Doe",
+//     fullName: function () {
+//       return this.firstName + " " + this.lastName;
+//     }
+//   }
+  
+//   const member = {
+//     firstName:"Hege",
+//     lastName: "Nilsen",
+//   }
+  
+//   let fullName = person.fullName.bind(member);
+//   console.log(fullName);
+
+
+// const youtuber ={
+//     name : "thapa",
+//     content : "programming",
+//     feature : function(){
+//         console.log(`My fav  ${this.name} is ${content}`)
+//     }
+// }
+
+// let youtuberFun = youtuber.feature;
+// youtuberFun();
+
+// let youtuberFun2 = youtuber.feature.bind(youtuber);
+// youtuberFun2();
+
+// //forEach loop()
+
+const myFavProg = ['java','C++','C'];
+
+// for(let x=0; x<myFavProg.length;x++){
+//     console.log(x);
+// }
+myFavProg.forEach(function(arryavalue,index,arr ){
+    console.log(arryavalue,index,arr );
+    
+})
+
+console.log('Second');
+
+myFavProg.forEach((val , i , myFavProg) => {
+    console.log(val, i , myFavProg);
+})
+
+const newArr = [10,20,30,40,50];
+
+newArr.forEach(function(val, ind, arr){
+    console.lo
+})
+
