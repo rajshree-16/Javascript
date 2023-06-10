@@ -1,0 +1,126 @@
+/ var name = 'Rajshree'
+// console.log(name);
+//var scope..function scope
+//let snd const scope..block scope
+
+// function modJS(easy){
+//      if(easy){
+//         let naame = 'rrajshree';
+//         const sname = 'bansal';
+//         // console.log("my name is "+ naame +" "+sname);
+// }
+//     }
+//     console.log("my name is "+ naame +" "+sname);
+
+// modJS(true);
+
+    // let myfirst = "vRAjshree";
+    // let myLast = "Bansal";
+//     console.log("My name is "+ myfirst+" My surname is" + myLast);
+// //use this
+//     console.log(`My name is ${myfirst}. My surname is ${myLast}. `);
+
+//we can add expressions too
+
+
+//template strings
+// let a=20;
+// let b=30;
+// console.log('Fifty is '+(a+b) + ' and \n not ' + (2*a+b)+'.');
+// console.log(`fisty is ${a+b} and n
+
+
+
+
+// ot ${2*a+b} .`);
+
+// console.log(`${myfirst}`.startsWith('V'));
+// console.log(`${myfirst}`.endsWith('v'));
+// console.log(`${myfirst}`.includes('shr'));
+// console.log(`${myfirst} ${myLast} `.repeat(4));
+
+//swap 2 no. w/o 3rd var
+
+// let a=3;
+// let b=7;
+// [a,b] = [b,a];
+
+// console.log(`value of a is ${a} and value of b is ${b}`);
+
+//object destructuring
+
+// const bioData = {
+//     name :"Rajshree",
+//     deg : 'BTECH',
+//     hob : {
+//         first :"playing",
+//         sec : "dancing"
+//     }
+// }
+
+// let {name,deg}=bioData;
+// console.log(`my name is ${name}.My degree is ${deg}`);
+ 
+// if had to change variable name
+// let{name:myName,deg,hob}=bioData;
+// console.log(`my name is ${myName}.My degree is ${deg} my hobby is ${hob.first} and ${hob.sec}`)
+
+//default function
+ 
+// function mult(a,b){
+//     b= (typeof b !== 'undefined') ? b:2
+//     console.log(a*b);
+
+// }
+// mult(4);
+
+// const mult =(a,b=4) => {
+//     console.log(`multiplication of two no. is ${a*b}`);
+// }
+// mult(4);
+
+//rest parameter
+// ...
+
+// function sum(...its){
+//     console.log(...its);
+//     let total =0;
+//     for(let i of its){
+//         total += i;
+//     }
+//     console.log(total)
+// }
+// sum(1,2,3,4,5,6)
+
+// function fun(a,b,...c){
+//     console.log(`${a} ${b}`);
+//     console.log(c);
+//     console.log(c[0]);
+//     console.log(c.length);
+//     console.log(c.indexOf('Shree'));
+// }
+// fun("ron","Raj","Jai","Shree");
+
+
+
+// function sum (a,b,c,d){
+//     console.log(a+b+c+d);
+// }
+//apply
+// const arrVal =[1,2,3];
+//  sum.apply(null,arrVal);
+
+//
+// var arrVal =[5,2,3,4];
+// console.log(...arrVal)// 5 2 3 4
+// sum(...arrVal);// 14
+
+//replace concat
+
+// let arr1 = [1,2,3]
+// let arr2 = [5,6,8]
+
+// arr1 = arr1.concat(arr2);
+
+// arr1 = [...arr1,...arr2]
+// console.log(arr1);
