@@ -1,0 +1,29 @@
+const fruits = ["banana","orange","apple","kiwi"];
+console.log(fruits.shift(2));
+// console.log(fruits.toString());
+// fruits.forEach(myFun);
+// function myFun(value){
+//     console.log(value);
+// }
+
+// You should use objects when you want the element names to be strings (text).
+// You should use arrays when you want the element names to be numbers.
+
+// const points = new Array(40, 100, 1, 5, 25, 10);
+// console.log(points); //const points = [40, 100, 1, 5, 25, 10];
+
+
+// const points = new Array(100);  //not correct
+// instead
+// const points = [40];
+// console.log(points);
+// console.log(Array.isArray(points)); //const points = [40, 100, 1, 5, 25, 10];
+
+// const points = [40, 100, 1, 5, 25, 10];
+// console.log(points);
+
+// const fruits = ["Banana ];
+
+// console.log(fruits instanceof Array);
+
+
